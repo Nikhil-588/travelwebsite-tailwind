@@ -9,7 +9,7 @@ import Tours from "./components/Tours";
 import Login from "./components/Login";
 import Toursdetails from "./components/Toursdetails";
 import Sign from "./components/Sign";
-import Bankdetails from "./components/bankdetails";
+import Bankdetails from "./components/Bankdetails.jsx";
 
 
 //import Derived from "./components/Derived";
