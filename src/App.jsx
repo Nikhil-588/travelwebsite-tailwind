@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TourDetails from "./components/Toursdetails";
+//import TourDetails from "./components/Toursdetails";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,7 +9,7 @@ import Tours from "./components/Tours";
 import Login from "./components/Login";
 import Toursdetails from "./components/Toursdetails";
 import Sign from "./components/Sign";
-import Bankdetails from "./components/bankdetails";
+import Bankdetails from "./components/Bankdetails";
 
 
 //import Derived from "./components/Derived";
