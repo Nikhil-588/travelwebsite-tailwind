@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 //import { BsBank } from "react-icons/bs";
-function BankDetails(){
+function Bankdetails(){
     const navigate=useNavigate();
     const banks=[
    {name: "HDFC", discount:10},
@@ -37,4 +37,4 @@ function BankDetails(){
         </div>
     );
 }
-export default BankDetails;
+export default Bankdetails;
