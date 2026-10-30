@@ -1,8 +1,8 @@
 
 import { useState } from "react";
 import About from "./About";
-import Tours from "./Tours";
-
+//import Tours from "./Tours";
+import Cardes from "./cardes";
 
 function Home() {
   const [bookingCount, setBookingCount] = useState(0);
@@ -32,7 +32,7 @@ function Home() {
         Booking attempts: {bookingCount}
       </p>
 
-      <Tours onBook={handleBooking} />
+      <Cardes onBook={handleBooking} />
       <About />
     </div>
   );
