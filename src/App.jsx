@@ -9,7 +9,7 @@ import Tours from "./components/Tours";
 import Login from "./components/Login";
 import Toursdetails from "./components/Toursdetails";
 import Sign from "./components/Sign";
-import Bankdetails from "./components/Bankdetails";
+import Bankdetails from "./components/bankdetails";
 
 
 //import Derived from "./components/Derived";
@@ -34,7 +34,6 @@ function App() {
             <Route path="/sign" element={<Sign />} />
             <Route path="/tours/:id" element={<Toursdetails />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/tours/:id" element={<TourDetails />} />
             <Route path="/Bankdetails" element={<Bankdetails />} />
           </Routes>
 
