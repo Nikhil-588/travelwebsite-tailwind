@@ -1,6 +1,7 @@
 import {useParams, useNavigate } from "react-router-dom";
 import travelData from "./travel.json";
-
+import { Link } from "react-router-dom";
+//import BankDetails from "./bankdetails";
 function TourDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -59,7 +60,8 @@ function TourDetails() {
             >
               Back
             </button>
-            <button className="ml-90 hover:scale-102">view bank offers</button>
+            <Link to="/BankDetails" className="border border-2 p-2 rounded-[5px] mt-3 ml-100 mb-3  bg-blue-600 hover:scale-105 hover:text-white"
+>View Bank offers</Link>
           </div>
         </div>
       </div>

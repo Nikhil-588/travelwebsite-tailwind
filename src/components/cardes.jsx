@@ -20,7 +20,7 @@ function Cardes({ onBook }) {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {travelData.map((e) => (
+        {travelData.slice(0,6).map((e) => (
           <div
             key={e.location}
             onClick={() => handleCardClick(e.location)}

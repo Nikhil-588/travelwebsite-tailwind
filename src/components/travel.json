@@ -62,83 +62,77 @@
     "rating": 4.6,
      "discount": 15,
      "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
-
-    
     "price":6000,
     "image_url":"/goa.png",
     "url": "https://goa-tourism.com/"
   },
-
   {
-    "id": 1,
+    "id": 7,
     "location": "Bali, Indonesia",
     "rating": 4.8,
+     "discount": 15,
     "price":4000,
     "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
-
-    
-     "discount": 15,
     "image_url":"/bali.png",
     "url": "https://www.indonesia.travel/"
   },
   {
-    "id": 2,
+    "id": 8,
     "location": "Paris, France",
     "rating": 4.9,
+     "discount": 10,
     "price":5000,
-    "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
+        "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
 
-    
-     "discount": 45,
     "image_url":"/paris.png",
     "url": "https://parisjetaime.com/eng/"
   },
   {
-    "id": 3,
+    "id": 9,
     "location": "Manali, India",
     "rating": 4.7,
-    "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
+     "discount": 15,
+     "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
 
     
-     "discount": 15,
     "image_url":"/manali.png",
     "price":6000,
     "url": "https://himachaltourism.gov.in/"
   },
   {
-    "id": 4,
+    "id": 10,
     "location": "Maldives",
     "rating": 4.9,
-    "price":8000,
-    "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
+     "discount": 15,
+     "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
 
     
-     "discount": 15,
+    "price":8000,
     "image_url":"/maldives.png",
     "url": "https://visitmaldives.com/"
   },
   {
-    "id": 5,
+    "id": 11,
     "location": "Tokyo, Japan",
     "rating": 4.8,
+     "discount": 15,
+    "price":3000,
     "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
 
     
-    "price":3000,
-     "discount": 15,
     "image_url":"/japan.png",
     "url": "https://www.gotokyo.org/en/"
   },
   {
-    "id": 6,
+    "id": 12,
     "location": "Goa, India",
     "rating": 4.6,
-     "discount": 35,
+     "discount": 15,
      "description":"Experience tropical beaches, beautiful temples, lush green rice terraces, and exciting water activities. Enjoy a peaceful holiday surrounded by nature and culture.",
-
-    
     "price":6000,
     "image_url":"/goa.png",
     "url": "https://goa-tourism.com/"
   }
+
+  
 ]

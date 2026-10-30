@@ -9,7 +9,6 @@ function Navbar({ isDark, setIsDark }) {
       <h1 className="text-blue-700 font-bold text-xl">
         Next Trip
       </h1>
-
       <div className="flex items-center gap-8">
         <Link to="/" className="hover:text-blue-700">
           Home

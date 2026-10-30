@@ -31,7 +31,7 @@ function Home() {
       <p className="text-center text-xl font-bold my-4">
         Booking attempts: {bookingCount}
       </p>
-
+       
       <Cardes onBook={handleBooking} />
       <About />
     </div>
