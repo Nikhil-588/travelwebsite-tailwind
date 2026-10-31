@@ -43,9 +43,9 @@ console.log("Filtered Data:", filterdata);
                   className="w-full h-48 object-cover rounded-lg"
                 />
 
-                <h1 className="text-2xl ml-2">{n.location}</h1>
-                <p className="ml-2">Rating:{n.rating}</p>
-                <p className="ml-2">price:${n.price}</p>
+                <h1 className="text-2xl ml-2 font-bold text-blue-600">{n.location}</h1>
+                <p  className="ml-2">⭐ Rating:{n.rating}</p>
+                <p className="ml-2 font-bold">price:${n.price}</p>
 
                 <button
                   onClick={() => Navigate(`/tours/${n.id}`, { state: n })}
@@ -56,7 +56,7 @@ console.log("Filtered Data:", filterdata);
 
                 <button
                   onClick={() => Navigate(`/tours/${n.id}`, { state: n })}
-                  className="border border-2 p-2 rounded-[5px] mt-3 ml-60 mb-3 bg-white hover:scale-105"
+                  className="border border-2 p-2 rounded-[5px] mt-3 ml-65 mb-3 bg-gray-500 hover:scale-105"
                 >
                   View Offers
                 </button>

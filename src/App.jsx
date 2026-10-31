@@ -9,6 +9,7 @@ import Tours from "./components/Tours";
 import Login from "./components/Login";
 import Toursdetails from "./components/Toursdetails";
 import Sign from "./components/Sign";
+import Footer from "./components/Footer.jsx";
 import Bankdetails from "./components/Bankdetails.jsx";
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/tours/:id" element={<Toursdetails />} />
             <Route path="/login" element={<Login />} />
             <Route path="/Bankdetails" element={<Bankdetails />} />
+            <Route path="./Footer" element={<Footer/>} />
           </Routes>
 
         </div>

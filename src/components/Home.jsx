@@ -3,6 +3,7 @@ import { useState } from "react";
 import About from "./About";
 //import Tours from "./Tours";
 import Cardes from "./cardes";
+import Footer from "./Footer";
 
 function Home() {
   const [bookingCount, setBookingCount] = useState(0);
@@ -23,8 +24,15 @@ function Home() {
         }}
         className="w-full h-150"
       >
-        <h1 className="mx-auto max-w-7xl font-bold text-3xl py-65">
+        
+        <h1 className="mx-auto max-w-7xl font-bold text-3xl py-55">
           Take Only Memories, Leave Only Footsteps
+          <br />
+          <div>
+          <p className="text-1xl">Wander often, wonder always <span className="text-green-500">adventure</span><br /> begins where comfort ends</p>
+          <h1 className="text-blue-500">Dream. Explore. Discover.
+</h1>
+</div>
         </h1>
       </div>
 
@@ -34,7 +42,9 @@ function Home() {
        
       <Cardes onBook={handleBooking} />
       <About />
+      <Footer/>
     </div>
+    
   );
 }
 
