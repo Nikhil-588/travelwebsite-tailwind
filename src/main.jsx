@@ -14,6 +14,6 @@ import Todo from './components/Todo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Todo/>
+   <App/>
   </StrictMode>,
 )
