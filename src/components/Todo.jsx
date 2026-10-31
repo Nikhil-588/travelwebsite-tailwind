@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MdDelete } from "react-icons/md";
 import { FaRegCheckCircle } from "react-icons/fa";
 
-function Todo() {
+function Todo(){
   const [Inputvalue, setInputvalue] = useState("");
   const [task, settask] = useState([]);
   const [completed, setCompleted] = useState([]);

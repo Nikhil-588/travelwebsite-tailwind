@@ -6,7 +6,15 @@ import Cardes from "./cardes";
 import Footer from "./Footer";
 
 function Home() {
+  const [time, settime]=useState();
   const [bookingCount, setBookingCount] = useState(0);
+    
+   setInterval(() => {
+     const now = new Date();
+  const tdate=now.toLocaleDateString();
+  const ttime=now.toLocaleTimeString();
+  settime(`${tdate}-${ttime}`);
+   }, 1000);
 
   function handleBooking(place) {
     setBookingCount(count => count + 1);
@@ -15,6 +23,9 @@ function Home() {
 
   return (
     <div>
+      <div>
+        <p>{time}</p>
+      </div>
       <div
         style={{
           backgroundImage: "url('/image.png')",

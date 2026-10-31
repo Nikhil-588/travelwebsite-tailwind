@@ -18,7 +18,7 @@ Our mission is to make travel planning simple, and inspiring. From beautiful bea
 Whether you're planning a relaxing holiday, a family vacation, a romantic getaway, adventurous trip with friends, we're here to inspire your next journey.</p>
          </section>
          <div className="text-center"> 
-            <Link to="/tours" className="inline-block border-2 border-black p-2 mb-5">Learn more</Link>
+            <Link to="/tours" className="inline-block border-2 border-black p-2 mb-5 hover:scale-102 hover:text-white">Learn more</Link>
          </div>
          </div>
         </div>
