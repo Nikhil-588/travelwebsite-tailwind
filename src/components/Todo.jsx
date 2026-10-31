@@ -2,9 +2,15 @@ import { useState } from "react";
 import { MdDelete } from "react-icons/md";
 import { FaRegCheckCircle } from "react-icons/fa";
 
+const todokey="react";
+const getlocalstorage=()=>{
+     const rawTodos=localStorage.getItem(todokey);
+    if(!rawTodos) return [];
+    return JSON.parse(rawTodos);  
+}
 function Todo(){
   const [Inputvalue, setInputvalue] = useState("");
-  const [task, settask] = useState([]);
+  const [task, settask] = useState(()=>getlocalstorage());
   const [completed, setCompleted] = useState([]);
   const [datetime, setdatetime]=useState("");
 
@@ -21,6 +27,7 @@ function Todo(){
     settask((prev) => [value,...prev]);
     setInputvalue("");
   }
+  localStorage.setItem("todokey",JSON.stringify(task));
 
   function handleCheck(index) {
     setCompleted((prev) =>

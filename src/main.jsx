@@ -4,6 +4,7 @@ import './index.css'
 //import Tours from "./components/Tours"
 //import Toogle from './components/Toogle.jsx'
 import App from './App.jsx'
+import Todo from './components/Todo.jsx'
 //import Todo from './components/Todo.jsx'
 //import Home from './components/Home.jsx'
 //import Lifting from './components/lifting.jsx'
@@ -13,6 +14,6 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <App/>
+   <Todo/>
   </StrictMode>,
 )

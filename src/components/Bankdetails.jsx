@@ -15,7 +15,7 @@ function Bankdetails(){
     return(
         <div>
          <div>
-            <h1 className="font-bold flex justify-center">BANK OFFERS</h1>
+            <h1 className="font-bold text-lg flex justify-center">BANK OFFERS</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-5">
             {banks.map((a)=>{
                 return(
@@ -24,7 +24,7 @@ function Bankdetails(){
                         <li>
                             <p className="font-bold text-2xl  ml-3"> {a.name} Bank</p>
                             <p className="text-2xl font-  ml-3 text-green-600">{a.discount}% OFF</p>
-                            <button onClick={()=>alert(`OFFER APPLIED!! YOU SAVED  ${a.discount} %` )} className="bg-blue-500 text-white px-10 py-2 rounded-lg mt-3">Apply</button>
+                            <button onClick={()=>alert(`OFFER APPLIED!! YOU SAVED  ${a.discount}%` )} className="bg-blue-500 text-white px-10 py-2 rounded-lg mt-3">Apply</button>
                         </li>
                     </ul>
                 );

@@ -16,7 +16,7 @@ function TourDetails() {
   const dis = (place.discount*place.price)/100;
   const final=place.price-dis;
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-4xl mx-auto p-6 hover:shadow-[5px]">
       <div className="rounded-xl shadow-lg border overflow-hidden">
         <img
           src={place.image_url}

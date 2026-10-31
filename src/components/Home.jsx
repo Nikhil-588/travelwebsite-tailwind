@@ -33,7 +33,7 @@ function Home() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="w-full h-150"
+        className="w-full h-150 hover:shadow-xl"
       >
         
         <h1 className="mx-auto max-w-7xl font-bold text-3xl py-55">
