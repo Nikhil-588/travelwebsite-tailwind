@@ -26,7 +26,7 @@ function Cardes({ onBook }) {
             onClick={() => handleCardClick(e.location)}
             className="border rounded-xl p-5 shadow-md cursor-pointer hover:shadow-xl transition"
           >
-            <h2 className="text-xl font-bold mb-2">
+            <h2 className="text-xl font-bold mb-2">  
               {e.location}
             </h2>
 

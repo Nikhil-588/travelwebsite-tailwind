@@ -11,6 +11,7 @@ import Toursdetails from "./components/Toursdetails";
 import Sign from "./components/Sign";
 import Footer from "./components/Footer.jsx";
 import Bankdetails from "./components/Bankdetails.jsx";
+import TDate from "./components/TDate.jsx";
 
 
 //import Derived from "./components/Derived";
@@ -37,6 +38,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/Bankdetails" element={<Bankdetails />} />
             <Route path="./Footer" element={<Footer/>} />
+            <Route path="./TDate" element={<TDate/>}/>
           </Routes>
 
         </div>

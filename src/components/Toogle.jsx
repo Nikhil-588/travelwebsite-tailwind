@@ -10,7 +10,7 @@ function Toggle() {
   };
   return (
     <div className="p-6">
-      <h1 className="p-10 font-bold text-2xl">Toogle switch <IoIosSwitch /></h1>
+      <h1 className="p-10 font-bold text-2xl">Toogle switch <IoIosSwitch size={10} /></h1>
       <a href="#"><FaUserPlus /></a>
       <button
         onClick={handleToggle}

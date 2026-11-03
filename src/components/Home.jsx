@@ -23,8 +23,8 @@ function Home() {
 
   return (
     <div>
-      <div>
-        <p>{time}</p>
+      <div className="text-right mr-10">
+        <p className="font-bold">{time}</p>
       </div>
       <div
         style={{
@@ -41,7 +41,7 @@ function Home() {
           <br />
           <div>
           <p className="text-1xl">Wander often, wonder always <span className="text-green-500">adventure</span><br /> begins where comfort ends</p>
-          <h1 className="text-blue-500">Dream. Explore. Discover.
+          <h1 className="text-blue-600">Dream. Explore. Discover.
 </h1>
 </div>
         </h1>
