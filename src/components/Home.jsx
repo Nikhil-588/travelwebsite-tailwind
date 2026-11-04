@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import About from "./About";
 import Cardes from "./Cardes";
@@ -8,15 +7,15 @@ function Home() {
   const [time, settime] = useState("");
   const [bookingCount, setBookingCount] = useState(0);
   const [current, setCurrent] = useState(0);
-
   const slides = [
     {
       image: "/image.png",
       title: "Take Only Memories, Leave Only Footsteps",
       subtitle: "Wander often, wonder always. Adventure begins where comfort ends.",
     },
+  
     {
-      image: "/paris.png",
+      image: "/world.png",
       title: "Dream. Explore. Discover.",
       subtitle: "The world is waiting for you. Start your journey today!",
     },
@@ -24,7 +23,6 @@ function Home() {
 
   useEffect(() => {
     document.title = "Travel website";
-
     const updateTime = () => {
       const now = new Date();
       settime(
@@ -41,7 +39,7 @@ function Home() {
   useEffect(() => {
     const slider = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(slider);
   }, [slides.length]);
@@ -57,7 +55,6 @@ function Home() {
         <p className="font-bold">{time}</p>
       </div>
 
-      
       <div className="relative w-full h-[550px] overflow-hidden">
         <div
           className="flex h-full transition-transform duration-1000 ease-in-out"
@@ -72,7 +69,6 @@ function Home() {
               />
 
               <div className="absolute inset-0 bg-black/35"></div>
-
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-5">
                 <h1 className="text-white text-3xl md:text-5xl font-bold">
                   {slide.title}

@@ -12,7 +12,7 @@ import Sign from "./components/Sign";
 import Footer from "./components/Footer.jsx";
 import Bankdetails from "./components/Bankdetails.jsx";
 import TDate from "./components/TDate.jsx";
-import NotFetchapi from "./States/NotFetchapi";
+//import NotFetchapi from "./States/NotFetchapi";
 
 
 //import Derived from "./components/Derived";
