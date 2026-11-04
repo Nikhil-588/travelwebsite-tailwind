@@ -3,7 +3,7 @@ import {useEffect, useState } from "react";
 import About from "./About";
 //import Tours from "./Tours";
 //import ImageSlider from "./Imageslider";
-import Cardes from "./Cardes";
+import Cardes from "./cardes";
 import Footer from "./Footer";
 import useeffect from "../States/Useeffect";
 

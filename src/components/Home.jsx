@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import About from "./About";
-import Cardes from "./Cardes";
+import Cardes from "./cardes";
 import Footer from "./Footer";
 
 function Home() {
