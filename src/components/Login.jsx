@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 //import TDate from "./TDate";
 function Login(){
           const navigate=useNavigate();
       const [email , setEmail]=useState("");
       const [password, setPassword]=useState("");
-     
+        useEffect(()=>{
+          document.title=`Travel website login`;
+        },[]);
     function handle1(){
       
       const saveduser=JSON.parse(localStorage.getItem("user"));

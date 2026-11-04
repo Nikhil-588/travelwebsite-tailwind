@@ -1,9 +1,12 @@
 import traveldata from "./travel.json";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 //import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Tours() {
+  useEffect(()=>{
+            document.title=`Travel website Tours  `;
+          },[]);
   const Navigate = useNavigate();
   const [search, setsearch] = useState("");
 const filterdata = traveldata.filter((n) =>

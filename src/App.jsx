@@ -12,6 +12,7 @@ import Sign from "./components/Sign";
 import Footer from "./components/Footer.jsx";
 import Bankdetails from "./components/Bankdetails.jsx";
 import TDate from "./components/TDate.jsx";
+import NotFetchapi from "./States/NotFetchapi";
 
 
 //import Derived from "./components/Derived";
@@ -28,7 +29,7 @@ function App() {
             isDark={isDark}
             setIsDark={setIsDark}
           />
-
+        
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tours" element={<Tours />} />

@@ -4,9 +4,11 @@ import './index.css'
 //import Tours from "./components/Tours"
 //import Toogle from './components/Toogle.jsx'
 import App from './App.jsx'
+import NotFetchapi from './States/NotFetchapi.jsx'
+import Cleanup from './States/Cleanup.jsx';
 //import Use from './States/Use.jsx'
 //import Shortcircuit from './components/shortcircuit.jsx'
-//import Useeffect from './States/Useeffect.jsx'
+//import Useeffect1 from './States/Useeffect1.jsx'
 //import Toggle from './components/Toogle.jsx'
 //import { FaArrowsToDot } from 'react-icons/fa6'
 //import Todo from './components/Todo.jsx'
@@ -20,6 +22,6 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <App/>
+    <App/>
   </StrictMode>,
 )

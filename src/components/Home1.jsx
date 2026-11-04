@@ -1,0 +1,81 @@
+
+import {useEffect, useState } from "react";
+import About from "./About";
+//import Tours from "./Tours";
+//import ImageSlider from "./Imageslider";
+import Cardes from "./Cardes";
+import Footer from "./Footer";
+import useeffect from "../States/Useeffect";
+
+function Home1() {
+  const [time, settime]=useState();
+  const [bookingCount, setBookingCount] = useState(0);
+  //const [current,setcurrent]=useState("");
+    useEffect(()=>{
+    document.title=`Travel website`;
+  },[]);
+
+   setInterval(() => {
+     const now = new Date();
+  const tdate=now.toLocaleDateString();
+  const ttime=now.toLocaleTimeString();
+  settime(`${tdate}-${ttime}`);
+   }, 1000);
+
+  function handleBooking(place) {
+    setBookingCount(count => count + 1);
+    alert(`You selected ${place}!`);
+  }
+ const slides=[
+  {
+    image:"/image.png",
+  },
+  {
+    image:"/paris.png"
+  }
+ ];
+    useEffect(()=>{
+     const slider=setInterval(()=>{
+       setcurrent((prev)=>(prev+1)%slides.length)
+     },300)
+     return ()=>clearInterval(slider);
+    },[slides.length])
+  return (
+    <div>
+      <div className="text-right mr-10">
+        <p className="font-bold">{time}</p>
+      </div>
+      <div
+        style={{
+          backgroundImage: "url('/image.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="w-full h-150 hover:shadow-xl"
+      >
+        
+        <h1 className="mx-auto max-w-7xl font-bold text-3xl py-55">
+          Take Only Memories, Leave Only Footsteps
+          <br />
+          <div>
+          <p className="text-1xl">Wander often, wonder always <span className="text-green-500">adventure</span><br /> begins where comfort ends</p>
+          <h1 className="text-blue-600">Dream. Explore. Discover.
+</h1>
+</div>
+        </h1>
+      </div>
+
+      <p className="text-center text-xl font-bold my-4">
+        Booking attempts: {bookingCount}
+      </p>
+       
+      <Cardes onBook={handleBooking} />
+      <About />
+      <Footer/>
+    </div>
+    
+  );
+}
+
+export default Home1;

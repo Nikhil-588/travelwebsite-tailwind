@@ -60,7 +60,7 @@ function TourDetails() {
             >
               Back
             </button>
-            <Link to="/BankDetails" className="border border-2 p-2 rounded-[5px] mt-3 ml-100 mb-3  bg-blue-600 hover:scale-105 hover:text-white"
+            <Link to="/Bankdetails" className="border border-2 p-2 rounded-[5px] mt-3 ml-100 mb-3  bg-blue-600 hover:scale-105 hover:text-white"
 >View Bank offers</Link>
           </div>
         </div>

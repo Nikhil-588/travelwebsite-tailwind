@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 function Sign(){
+    useEffect(()=>{
+              document.title=`Travel website sign in`;
+            },[]);
     const navigate=useNavigate();
     const [name,setName]=useState("");
     const [email,setEmail]=useState("");
