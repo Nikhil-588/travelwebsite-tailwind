@@ -25,9 +25,9 @@ function Sign(){
 
     }
     return(
-        <div className="flex justify-center">
-          <div className="border-2 rounded-lg p-8 my-10 w-[400px]  hover:shadow-2xl transition">
-            <div className="flex justify-center font-bold text-blue-600 text-xl">
+        <div className="flex justify-center bg-blue-100 min-h-screen">
+          <div className="border-2 rounded-lg p-8 my-10 w-[400px]  h-[520px] hover:shadow-2xl transition bg-white">
+            <div className="flex justify-center font-bold text-blue-600 text-xl ">
             <h1>SIGN IN</h1>
             </div>
             <label htmlFor="name" className="block mb-0  font-bold">Name :</label> <br />
@@ -46,7 +46,7 @@ function Sign(){
                 <Link to="/login " className="hover:text-green-600 font-bold text-blue-700">Login</Link>
             </p>
            </div>
-           <p>hello:{name}</p>
+       
                </div>
         </div>
     );

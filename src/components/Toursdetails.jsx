@@ -1,14 +1,17 @@
 import {useParams, useNavigate } from "react-router-dom";
 import travelData from "./travel.json";
 import { Link } from "react-router-dom";
+//import { useState } from "react";
 //import BankDetails from "./bankdetails";
 function TourDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
+  //const [count,setcount]=useState(0);
 
  const place = travelData.find(
    (item) => String(item.id) === id
   );
+  
 
   if (!place) {
     return <h2 className="text-center mt-10">Destination not found</h2>;
@@ -16,12 +19,14 @@ function TourDetails() {
   const dis = (place.discount*place.price)/100;
   const final=place.price-dis;
   return (
-    <div className="max-w-4xl mx-auto p-6 hover:shadow-[5px]">
-      <div className="rounded-xl shadow-lg border overflow-hidden">
+    <div className="bg-blue-50">
+    <div className="max-w-4xl mx-auto p-6 hover:shadow-[5px] ">
+    
+      <div className="rounded-xl relative group shadow-lg border overflow-hidden bg-red-50">
         <img
           src={place.image_url}
           alt={place.location}
-          className="w-full h-72 object-cover"
+          className="w-full h-80 object-cover"
         />
 
         <div className="p-6">
@@ -48,7 +53,7 @@ function TourDetails() {
 
           <div className="flex gap-3">
             <button
-              onClick={() => alert(`Booking ${place.location}`)}
+              onClick={()=>{alert(`you booked ${place.location}`)}}
               className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:scale-102"
             >
               Book Now
@@ -65,6 +70,7 @@ function TourDetails() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import './index.css'
 //import Tours from "./components/Tours"
 //import Toogle from './components/Toogle.jsx'
 import App from './App.jsx'
+import Event from './components/Event.jsx'
 import NotFetchapi from './States/NotFetchapi.jsx'
 import Cleanup from './States/Cleanup.jsx';
 //import Use from './States/Use.jsx'
@@ -15,6 +16,7 @@ import Cleanup from './States/Cleanup.jsx';
 //import Todo from './components/Todo.jsx'
 //import Usetime from './States/Usetime.jsx'
 //import Home from './components/Home.jsx'
+import Emusa from './components/Emusa.jsx'
 //import Lifting from './components/lifting.jsx'
 //import Lifting from './components/lifting.jsx'
 //import Todo from './components/Todo.jsx'

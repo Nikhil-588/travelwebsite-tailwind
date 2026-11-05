@@ -17,17 +17,17 @@ console.log("Travel Data:", traveldata);
 console.log("Filtered Data:", filterdata);
 
   return (
-    <>
-      <div className="flex flex-col items-center font-bold text-2xl mt-3 gap-3">
-        <h1 className="text-blue-800 mt-5">Select your destination</h1>
-        <br />
+    <div className="bg-blue-50">
+      <div className="flex flex-col items-center  text-2xl mt-0 gap-3 ">
+        <h1 className="text-blue-800 mt-4 font-bold text-3xl sm:text-2xl md:text-3xl lg:text-3xl">Select your destination</h1>
+        <br/>
         <div>
           <input
             type="text"
             placeholder="search your....."
             value={search}
             onChange={(e) => {setsearch(e.target.value)}}
-            className="border border-gray-400 rounded-lg p-2 w-full sm:w-72 outline-none focus:border-blue-500"
+            className="border border-gray-400 rounded-lg p-1 bg-white w-full sm:w-70 outline-none focus:border-blue-500"
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ console.log("Filtered Data:", filterdata);
           filterdata.map((n) => (
             <ul
               key={n.id}
-              className="border rounded-lg hover:scale-100"
+              className="border rounded-lg hover:scale-100 bg-green-50"
             >
               <li>
                 <img
@@ -45,7 +45,6 @@ console.log("Filtered Data:", filterdata);
                   alt="cfghjk"
                   className="w-full h-48 object-cover rounded-lg"
                 />
-
                 <h1 className="text-2xl ml-2 font-bold text-blue-600">{n.location}</h1>
                 <p  className="ml-2">⭐ Rating:{n.rating}</p>
                 <p className="ml-2 font-bold">price:${n.price}</p>
@@ -72,7 +71,8 @@ console.log("Filtered Data:", filterdata);
           </p>
         )}
       </div>
-    </>
+      </div>
+    
   );
 }
 

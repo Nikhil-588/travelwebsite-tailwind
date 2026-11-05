@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 //import { BsBank } from "react-icons/bs";
+import { FaArrowLeft } from "react-icons/fa";
 import Home from "./Home";
 function Bankdetails(){
     const navigate=useNavigate();
@@ -31,8 +32,8 @@ function Bankdetails(){
                 );
             })}
          </div>
-         <div>
-            <button onClick={()=>navigate(-1)} className="flex justify-center font-bold text-2xl ml-110  bg-amber-200 rounded-xl px-80">Back</button>
+         <div className="flex justify-end">
+            <button onClick={()=>navigate(-1)} className="flex justify-center font-bold text-2xl p-3 mr-10 bg-gray-600 rounded-xl">Back</button>
          </div>
          </div>
         </div>

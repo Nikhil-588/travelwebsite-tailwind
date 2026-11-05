@@ -13,7 +13,7 @@ function Home() {
       title: "Take Only Memories, Leave Only Footsteps",
       subtitle: "Wander often, wonder always. Adventure begins where comfort ends.",
     },
-  
+    
     {
       image: "/world.png",
       title: "Dream. Explore. Discover.",
@@ -50,7 +50,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="bg-gray-300">
       <div className="text-right mr-10">
         <p className="font-bold">{time}</p>
       </div>
@@ -83,11 +83,11 @@ function Home() {
         </div>
       </div>
 
-      <p className="text-center text-xl font-bold my-4">
+      <p className="text-center text-xl font-bold my-4  ml-2 mr-2">
         Booking attempts: {bookingCount}
       </p>
 
-      <Cardes onBook={handleBooking} />
+      <Cardes onBook={handleBooking} /> 
       <About />
       <Footer />
     </div>

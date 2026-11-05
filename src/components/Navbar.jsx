@@ -4,7 +4,7 @@ import { FaUserPlus } from "react-icons/fa6";
 
 function Navbar({ isDark, setIsDark }) {
   return (
-    <nav className="bg-amber-500 w-full flex items-center justify-between px-6 py-4">
+    <nav className="bg-amber-500 w-full flex items-center justify-between px-4   py-6">
 
       <h1 className="text-blue-700 font-bold text-xl">
         Next Trip

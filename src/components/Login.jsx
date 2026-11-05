@@ -25,17 +25,16 @@ function Login(){
       }
     }
     return(
-        <div className="flex justify-center ">
-          
-            <div className="border-2 rounded-lg p-8 my-30 w-[400px] hover:shadow-2xl transition">
+        <div className="flex justify-center bg-blue-100 min-h-screen">
+            <div className="border-2 rounded-lg p-8 my-30 w-[400px]  h-[380px] hover:shadow-2xl transition-colors bg-white ">
             <h1 className="text-blue-800  flex justify-center py-0 font-bold text-2xl">LOG IN</h1>
             <div>
                 <label htmlFor="email" className="block mb-2 font-bold">Email</label>
                 <input type="email" placeholder="Email" required value={email} autoComplete="off" onChange={(e)=>setEmail(e.target.value)} className="border border-2 rounded-lg w-full p-2  mb-4"/>
             </div>
             <div>
-                <label htmlFor="Password" className="block mb-2 font-bold">Password</label>
-                <input type="Password" placeholder="password" required value={password} onChange={(e)=>setPassword(e.target.value)} className=" border-2 rounded-lg w-full p-2 mb-4"/>
+                <label htmlFor="Password" className="block mb-2  font-bold">Password</label>
+                <input type="Password" placeholder="password" required autoComplete="off" value={password} onChange={(e)=>setPassword(e.target.value)} className=" border-2 rounded-lg w-full p-2 mb-4"/>
             </div>
             <button onClick={handle1} className=" bg-blue-600 mt-3 font-bold w-full rounded-[8px]  px-2 py-2 hover:text-white">Login</button>
             <p className="mt-4 font-stretch-100% font-bold">Don't have account?
