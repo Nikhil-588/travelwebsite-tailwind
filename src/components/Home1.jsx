@@ -10,7 +10,7 @@ import useeffect from "../States/Useeffect";
 function Home1() {
   const [time, settime]=useState();
   const [bookingCount, setBookingCount] = useState(0);
-  //const [current,setcurrent]=useState("");
+  const [current,setcurrent]=useState("");
     useEffect(()=>{
     document.title=`Travel website`;
   },[]);

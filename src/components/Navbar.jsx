@@ -6,27 +6,27 @@ function Navbar({ isDark, setIsDark }) {
   return (
     <nav className="bg-amber-500 w-full flex items-center justify-between px-4   py-6">
 
-      <h1 className="text-blue-700 font-bold text-xl">
+      <h1 className="text-blue-700 font-bold italic text-xl">
         Next Trip
       </h1>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center font-bold gap-8">
         <Link to="/" className="hover:text-blue-700">
           Home
         </Link>
 
-        <Link to="/tours" className="hover:text-blue-700">
+        <Link to="/tours" className="hover:text-blue-700 font-bold">
           Tours
         </Link>
 
-        <Link to="/about" className="hover:text-blue-700">
+        <Link to="/about" className="hover:text-blue-700 font-bold">
           About
         </Link>
 
-        <Link to="/sign" className="hover:text-blue-700">
+        <Link to="/sign" className="hover:text-blue-700 font-bold">
           Sign In
         </Link>
         
-        <Link to="/Login" className="hover:text-blue-700">
+        <Link to="/Login" className="hover:text-blue-700 font-bold" >
           Login
         </Link>
         <Link to="/sign"><FaUserPlus />

@@ -19,7 +19,7 @@ console.log("Filtered Data:", filterdata);
   return (
     <div className="bg-blue-50">
       <div className="flex flex-col items-center  text-2xl mt-0 gap-3 ">
-        <h1 className="text-blue-800 mt-4 font-bold text-3xl sm:text-2xl md:text-3xl lg:text-3xl">Select your destination</h1>
+        <h1 className="text-blue-800 mt-4 font-bold text-3xl sm:text-2xl  md:text-3xl lg:text-3xl font-[Playfair_Display] font-bold text-5xl">Select your destination</h1>
         <br/>
         <div>
           <input
@@ -37,7 +37,7 @@ console.log("Filtered Data:", filterdata);
           filterdata.map((n) => (
             <ul
               key={n.id}
-              className="border rounded-lg hover:scale-100 bg-green-50"
+              className="border rounded-lg hover:scale-100 bg-green-50 hover: shadow-2xl"
             >
               <li>
                 <img
@@ -45,20 +45,20 @@ console.log("Filtered Data:", filterdata);
                   alt="cfghjk"
                   className="w-full h-48 object-cover rounded-lg"
                 />
-                <h1 className="text-2xl ml-2 font-bold text-blue-600">{n.location}</h1>
-                <p  className="ml-2">⭐ Rating:{n.rating}</p>
-                <p className="ml-2 font-bold">price:${n.price}</p>
+                <h1 className="text-2xl ml-3 font-bold mb-2 italic text-blue-600">{n.location}</h1>
+                <p  className="ml-2 mb-2">⭐ Rating:{n.rating}</p>
+                <p className="ml-2 font-bold">Price:${n.price}</p>
 
                 <button
                   onClick={() => Navigate(`/tours/${n.id}`, { state: n })}
-                  className="border border-2 p-2 rounded-[5px] mt-3 ml-2 mb-3 hover:scale-105 bg-blue-500"
+                  className="border border-blue-500 p-2 rounded-[5px] mt-3 ml-3 mb-3 hover:scale-105 bg-blue-500"
                 >
                   Book Now
                 </button>
 
                 <button
                   onClick={() => Navigate(`/tours/${n.id}`, { state: n })}
-                  className="border border-2 p-2 rounded-[5px] mt-3 ml-65 mb-3 bg-gray-500 hover:scale-105"
+                  className="border border-gray-500 p-2 rounded-[5px] mt-3 ml-65 mb-3 bg-gray-500 hover:scale-105 hover:text-blue-300"
                 >
                   View Offers
                 </button>
@@ -66,7 +66,7 @@ console.log("Filtered Data:", filterdata);
             </ul>
           ))
         ) : (
-          <p className="text-center text-red-500 col-span-full">
+          <p className="text-center font-bold italic text-blue-500 col-span-full">
             No destinations found!
           </p>
         )}

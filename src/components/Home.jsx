@@ -70,11 +70,11 @@ function Home() {
 
               <div className="absolute inset-0 bg-black/35"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-5">
-                <h1 className="text-white text-3xl md:text-5xl font-bold">
+                <h1 className="text-white text-3xl md:text-5xl  font-bold">
                   {slide.title}
                 </h1>
 
-                <p className="text-white text-lg md:text-2xl mt-5">
+                <p className="text-white text-lg italic  md:text-2xl mt-5">
                   {slide.subtitle}
                 </p>
               </div>
@@ -83,7 +83,7 @@ function Home() {
         </div>
       </div>
 
-      <p className="text-center text-xl font-bold my-4  ml-2 mr-2">
+      <p className="text-center text-xl italic  font-bold my-4  ml-2 mr-2">
         Booking attempts: {bookingCount}
       </p>
 

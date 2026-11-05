@@ -7,7 +7,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Footer(){
   return(
-    <div className="bg-gray-300 text-black font-sans">
+    <div className="bg-gray-300  text-black font-sans">
         <div className="text-center">
           <h2 className="font-bold mb-3 text-xl">Travel World </h2>
           <p className="mb-4 font-bold">Explore More. Travel More. Create Memories.</p>
